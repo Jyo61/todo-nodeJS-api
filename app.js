@@ -12,3 +12,5 @@ app.get('/user', function(req , res){
 app.listen(port, function(){
     console.log(`App listening at http://localhost:${port}`)
 })
+const todocategoryRoutes = require("./routes/todocategory.js")
+app.use("/api", todocategoryRoutes)
